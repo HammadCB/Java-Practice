@@ -6,7 +6,7 @@ class BankAccount {
     String name;
     double balance;
 
-    // Constructor
+ 
     BankAccount(String n, double b) {
         name = n;
         balance = b;
@@ -14,8 +14,7 @@ class BankAccount {
 
     void deposit(double amount) {
         balance += amount;
-        System.out.println("Deposited: " + amount);
-    }
+        System.out.println("Deposited: " + amount);}
 
     void withdraw(double amount) {
         if (amount <= balance) {
@@ -23,14 +22,12 @@ class BankAccount {
             System.out.println("Withdrawn: " + amount);
         } else {
             System.out.println("Insufficient balance!");
-        }
-    }
+        }}
 
     void showBalance() {
         System.out.println("Account Holder: " + name + " | Balance: " + balance);
     }
 }
-
 public class BankAccountApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -56,5 +53,4 @@ public class BankAccountApp {
         acc.showBalance();
 
         sc.close();
-    }
-}
+    }}
