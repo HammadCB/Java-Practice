@@ -20,8 +20,8 @@ class Circle {
 
 public class MultipleConstructor {
     public static void main(String[] args) {
-        Circle c1 = new Circle();       // default constructor
-        Circle c2 = new Circle(7.5);    // parameterized constructor
+        Circle c1 = new Circle();       
+        Circle c2 = new Circle(7.5);   
 
         System.out.println("Area (default): " + c1.area());
         System.out.println("Area (given): " + c2.area());
