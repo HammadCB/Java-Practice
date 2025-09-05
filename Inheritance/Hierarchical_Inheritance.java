@@ -21,11 +21,11 @@ class Cat extends Animal {
 public class Hierarchical_Inheritance {
     public static void main(String[] args) {
         Dog d = new Dog();
-        d.eat();   // inherited from Animal
-        d.bark();  // Dog's method
+        d.eat();   
+        d.bark(); 
 
         Cat c = new Cat();
-        c.eat();   // inherited from Animal
-        c.meow();  // Cat's method
+        c.eat();   
+        c.meow();  
     }
 }
