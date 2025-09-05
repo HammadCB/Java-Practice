@@ -18,7 +18,7 @@ class BankAccount {
 
 
 
-public class Public_Modifier {
+public class Private_Modifier {
 
     public static void main(String[] args) {
         BankAccount account = new BankAccount();
