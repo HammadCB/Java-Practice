@@ -63,6 +63,7 @@ class FastFood extends FoodCategory {
  System.out.print("Enter quantity: ");
  qty = sc.nextInt();
  bill.addItem("Chicken Steak", 3000, qty);
+ sc.close();
  }
  default -> System.out.println("Invalid Fast Food choice.");
  }
@@ -94,6 +95,7 @@ class Desserts extends FoodCategory {
  @Override
  public void selectItem(int choice, Bill bill) {
  Scanner sc = new Scanner(System.in);
+
  int qty;
 switch (choice) {
  case 1 -> {
@@ -120,6 +122,7 @@ switch (choice) {
  System.out.print("Enter quantity: ");
  qty = sc.nextInt();
  bill.addItem("Cupcakes", 150, qty);
+ sc.close();
  }
  default -> System.out.println("Invalid Dessert choice.");
  }
@@ -154,6 +157,7 @@ class Drinks extends FoodCategory {
  @Override
  public void selectItem(int choice, Bill bill) {
  Scanner sc = new Scanner(System.in);
+ 
  int qty;
  switch (choice) {
  case 1 -> {
@@ -169,9 +173,12 @@ class Drinks extends FoodCategory {
  case 3 -> {
  System.out.print("Enter quantity: ");
  qty = sc.nextInt();
+ 
  bill.addItem("Soda", 350, qty);
+ sc.close();
  }
  default -> System.out.println("Invalid Drink choice.");
+ 
  }
  }
 }
@@ -282,6 +289,7 @@ category.selectItem(itemChoice, bill);
  bill.showBill();
  System.out.println(" Your order is confirmed! Please wait while we prepare it.");
 System.out.println("Thank you for ordering! Enjoy your meal.");
+sc.close();
  }
 }
 
