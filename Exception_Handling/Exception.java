@@ -10,6 +10,7 @@ public class Exception {
             System.out.print("Enter a number: ");
             int num = sc.nextInt();   
             System.out.println("You entered: " + num);
+            sc.close();
         } catch (InputMismatchException e) {
             System.out.println("Invalid input! Please enter numbers only.");
         }
