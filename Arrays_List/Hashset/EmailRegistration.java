@@ -15,10 +15,10 @@ public class EmailRegistration {
             if (email.equalsIgnoreCase("exit")) break;
 
             if (emails.contains(email)) {
-                System.out.println("⚠️ Email already registered!");
+                System.out.println("Email already registered!");
             } else {
                 emails.add(email);
-                System.out.println("✅ Email registered successfully.");
+                System.out.println("Email registered successfully.");
             }
         }
 
