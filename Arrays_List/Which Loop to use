@@ -1,0 +1,10 @@
+| Feature                     | **For-each Loop** (`for (Type var : collection)`) | **Normal For Loop** (`for (int i=0; i<n; i++)`) | **Iterator** (`Iterator<T> it = list.iterator()`) |
+| --------------------------- | ------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------- |
+| **Best for**                | Simple read-only traversal                        | Index-based access, modifying by index          | Safe modification (remove/add) during iteration   |
+| **Index available?**        | ❌ No                                              | ✅ Yes (`i`)                                     | ❌ No                                              |
+| **Can modify elements?**    | ❌ Not directly                                    | ✅ Yes (using index)                             | ✅ Yes (with `it.remove()`)                        |
+| **Can remove safely?**      | ❌ Throws `ConcurrentModificationException`        | ❌ Also unsafe while looping                     | ✅ Safe (using `remove()`)                         |
+| **Works with arrays?**      | ✅ Yes                                             | ✅ Yes                                           | ❌ No (only collections)                           |
+| **Works with collections?** | ✅ Yes                                             | ✅ Yes                                           | ✅ Yes                                             |
+| **Code simplicity**         | ⭐ Easiest & cleanest                              | ⚡ Medium                                        | 🛠️ More verbose                                  |
+| **Use case examples**       | Printing, searching                               | Comparing neighbors, updating array elements    | Removing items from `ArrayList` while looping     |
