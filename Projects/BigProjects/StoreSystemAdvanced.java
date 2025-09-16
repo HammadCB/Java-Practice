@@ -90,6 +90,25 @@ public class StoreSystemAdvanced {
                     System.out.println("Invalid option!");
             }
         }
-    }}
+    }
 
-    
+    // ================= MAIN ==================
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        HashMap<String, Item> inventory = new HashMap<>();
+        inventory.put("Laptop", new Item(10, 1200));
+        inventory.put("Phone", new Item(20, 600));
+        inventory.put("Headphones", new Item(15, 100));
+
+        System.out.println("--- Store System Started ---");
+
+        //  Admin login attempt
+        if (adminLogin(sc)) {
+            adminMenu(sc, inventory);
+        }
+
+        sc.close();
+    }
+}
