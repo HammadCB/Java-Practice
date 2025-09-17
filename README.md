@@ -155,3 +155,9 @@ _____________Future Roadmap___________________
 🔜 Design Patterns
 
 And more etc ...
+
+
+
+![Java](https://img.shields.io/badge/Java-8%2B-blue)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
