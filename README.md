@@ -134,3 +134,24 @@ Each folder contains code examples, exercises, and projects covering different J
             InvertedTriangle.java
             PyramidPattern.java
             RightTriangle.java
+
+
+    
+
+_____________Future Roadmap___________________
+
+✅ OOP (done)
+
+✅ Exception Handling
+
+✅ File Handling
+
+✅ Serialization/Deserialization
+
+🔜 Streams API
+
+🔜 Java Generics
+
+🔜 Design Patterns
+
+And more etc ...
