@@ -140,6 +140,8 @@ Each folder contains code examples, exercises, and projects covering different J
 
 _____________Future Roadmap___________________
 
+✅ Basics 
+
 ✅ OOP (done)
 
 ✅ Exception Handling
