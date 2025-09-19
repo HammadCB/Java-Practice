@@ -7,23 +7,26 @@ public class StreamExamples {
     public static void main(String[] args) {
 
         List<String> names = Arrays.asList("Ali", "Hammad", "Sara", "Zara", "Ahmed","Ali");
+       
 
+        //STREAM doesnt hold Values just edit\
 
 //Filter
 List<String> filteredNames = names.stream()
-    .filter(name -> name.startsWith("A"))
+    .filter(name -> name.startsWith("A")) 
     .collect(Collectors.toList());
 
 System.out.println("Filtered Names: " + filteredNames); 
 
 
-
-//Sorted 
+//Sorted
 List<String> sortedNames = names.stream()
     .sorted()
     .collect(Collectors.toList());
 
 System.out.println("Sorted Names: " + sortedNames); 
+
+
 
 
 
