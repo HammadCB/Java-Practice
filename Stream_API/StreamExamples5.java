@@ -2,7 +2,7 @@ package Stream_API;
 import java.util.*;
 
 
-public class DDA {
+public class StreamExamples5 {
     public static void main(String[] args) {
         
 
